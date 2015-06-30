@@ -1,3 +1,5 @@
+package com.github.evreichard.pandorica;
+
 /**
  * Evan Reichard
  * https://github.com/evreichard
@@ -112,7 +114,7 @@ public class PandoricaGUI extends Application{
 		Button toggleButton = new Button("||");
 		Button nextButton = new Button(">>");
 		
-		Image settingsIcon = new Image(getClass().getResourceAsStream("res/settings.png"));
+		Image settingsIcon = new Image(getClass().getResourceAsStream("/legacy/settings.png"));
 		
 		Button settingsButton = new Button(null, new ImageView(settingsIcon));
 		stationList = new ComboBox();
@@ -161,13 +163,13 @@ public class PandoricaGUI extends Application{
 		Text progressText = new Text();
 		
 		// Load and set local fonts
-		Font.loadFont(getClass().getResource("res/Raleway.ttf").toExternalForm(), 30);
-		Font.loadFont(getClass().getResource("res/Ubuntu.ttf").toExternalForm(), 14);
+		Font.loadFont(getClass().getResource("/legacy/Raleway.ttf").toExternalForm(), 30);
+		Font.loadFont(getClass().getResource("/legacy/Ubuntu.ttf").toExternalForm(), 14);
 		songText.setFont(Font.font("Raleway", FontWeight.NORMAL, 30));
 		artistText.setFont(Font.font("Raleway", FontWeight.NORMAL, 14));
 		progressText.setFont(Font.font("Ubuntu", FontWeight.NORMAL, 14));
 
-		String imgURL = (String)getClass().getResource("res/PandoricaDummyArt.png").toString();
+		String imgURL = (String)getClass().getResource("/legacy/PandoricaDummyArt.png").toString();
 		Image defaultAlbumArt = new Image(imgURL);
 		ImageView albumImage = new ImageView(defaultAlbumArt);
 		

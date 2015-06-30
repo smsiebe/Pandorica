@@ -1,3 +1,5 @@
+package com.github.evreichard.pandorica;
+
 /**
  * Evan Reichard
  * https://github.com/evreichard
